@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url(/Assets/SFPRODISPLAYREGULAR.OTF);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7f6f4;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-left{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+.header-right{
+    display: flex;
+    gap: 60px;
+}
+
+.header-left li{
+    font-family: "SF Pro";
+    font-size: 12.9px;
+    font-weight: 600;
+    line-height: 19.35px;
+    color: rgb(80, 102, 131);
+}
+
+header p{
+    font-family: "SF Pro";
+    font-size: 12.9px;
+    font-weight: 600;
+    line-height: 19.35px;
+    color: rgb(80, 102, 131);
+}
+
+.num{
+    color: rgb(0, 183, 255);
+}
+
+.btn-head button{
+    font-family: "SF Pro";
+    font-size: 12.9px;
+    font-weight: 600;
+    line-height: 19.35px;
+    color: rgb(80, 102, 131);
+    border: 1px solid lightgray;
+    padding: 10px 25px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    position: fixed ;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    font-family: "SF Pro", sans-serif;
+    font-size: 14.5px;
+    font-weight: 600;
+    line-height: 21.75px;
+    color: rgb(56, 74, 98);
+}
+
+.header-hero{
+    background-color: #ece8d9;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    background-color:#ece8d9; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    display: flex;
+    gap: 230px;
+}
+ 
+
+.text-side {
+    width: 60%;
+    max-width: 600px;
+    margin-top: 150px;
+    padding-left: 70px;
+}
+
+.image-side {
+    width: 40%;
+    max-width: 600px;
+    margin-top: 200px;
+}
+
+.hero-image {
+  
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-side h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 67.2px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: rgb(56, 74, 98);
+    margin-bottom: 20px;
+}
+
+.text-side h4 {
+    font-family: "SF Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: rgb(112, 128, 149);
+    margin-bottom: 20px;
+}
+
+.text-side p {
+    font-family: "SF Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(56, 74, 98);
+    margin: 40px 0 20px;
+    letter-spacing: 0.5px;
+}
+
+/* .search-input {
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+    padding: 0 20px;
+    font-family: "SF Pro", sans-serif;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: rgb(56, 74, 98);
+} */
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  input[type="text"] {
+    border: none;
+    margin: 0;
+    padding: 30px 100px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #bbb;
+     
+  }
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin-left:100px;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:focus,
+input[type="text"]:focus {
+  /* box-shadow: 0 0 3px 0 #1183d6; */
+  /* border-color: #1183d6; */
+  outline: none;
+}
+.heading{
+    margin: auto;
+    width: 95%;
+}
+
+.card{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 30px;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.card2{
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    /* height:800px; */
+    width: 50%;
+    gap: 30px;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.image-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.head h2{
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: rgb(56, 74, 98);
+}
+
+.head p{
+    font-family: "SF Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 35.2px;
+    color: rgb(215, 127, 129);
+}
+
+.text{
+    border: 1px solid lightgray;
+    border-radius: 0 0 5px 5px;
+    padding: 30px;
+    margin-top: -10px;
+    box-shadow: 1px 1px 2px 1px lightgrey;
+}
+
+.text h4{
+    font-family: "SF Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(56, 74, 98);
+}
+
+.text h5{
+    font-family: "SF Pro", sans-serif;
+    font-size: 12.8px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: rgb(112, 128, 149);
+    margin-top: 10px;
+}
+
+.text p{
+    font-family: "SF Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: rgb(56, 74, 98);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text button{
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d77f81;
+    color: white;
+    font-family: "SF Pro", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 100%;
+}
+
+.brand{
+    padding-top: 150px;
+    margin: auto;
+    width: 95%;
+}
+
+.brand-head{
+    width: 45%;
+}
+
+.brand-head h3{
+    font-family: "DM Serif Display", serif;
+font-size: 30px;
+font-weight: 600;
+line-height: 36px;
+color: rgb(56, 74, 98);
+}
+
+.brand-head p{
+    font-family: "SF Pro", sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 28px;
+color: rgb(80, 102, 131);
+margin-top: 20px;
+}
+
+.testimonial{
+    background-color: #edf6fd;
+    padding: 50px 0;
+    margin-top: 100px;
+
+}
+
+.count{
+    padding: 50px 0;
+    margin-top: 100px;
+    
+}
+
+.testimonial h2, .count h2{
+font-family: "Times New Roman";
+font-size: 34px;
+font-weight: 700;
+line-height: normal;
+color: #384a76;
+margin-left: 45px;
+}
+
+.all-text{
+    background-color: white;
+    padding: 30px 40px;
+   margin-left: 20px;
+    border: 1px solid lightgray;
+
+}
+
+.count-text{
+   display: flex;
+}
+
+.twit{
+    display: flex;
+    gap: 30px;
+    
+}
+.twit-img img{
+    width: 20px;
+
+}
+
+.twit-img{
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    padding: 1px 5px;
+   
+  
+
+    width: 9%;
+}
+.testimonial-text, .counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    padding-top: 20px;
+}
+
+.all-text h5, .count-text h5{
+    font-family: "SF Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgb(56, 74, 98);
+}
+
+
+
+.count-img{
+    width: 40%;
+}
+
+.all-text p{
+ font-family: "SF Pro", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.5px;
+color: rgb(56, 74, 98);
+margin-top: 10px;
+letter-spacing: 1px;
+}
+.count-text p{
+    font-family: "SF Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: rgb(126, 124, 124);
+    margin-top: 10px;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+
+.blue{
+    color: rgb(0, 183, 255);
+}
+
+.forbes{
+    background-color: #f7f6f4 ;
+    background-size: cover;
+  
+}
+.forbes h2{
+    font-family: "DM Serif Display", serif;
+font-size: 30px;
+font-weight: 600;
+line-height: 36px;
+color: rgb(56, 74, 98);
+margin-top: 60px;
+margin-bottom: 40px;
+margin-left: 40px;
+}
+.forbes a{
+    font-family: "SF Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    color: rgb(56, 74, 98);
+}
+.forbes-content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+    padding-bottom: 100px;
+}
+
+.foot-content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+    padding: 80px 0;
+   
+    
+}
+
+.foot{
+    background-color: #384a62;
+    background-size: cover;
+}
+
+.foot-content h3{
+    font-family: "SF Pro", sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+color: rgb(236, 232, 217);
+letter-spacing: 1px;
+}
+
+.foot-content p{
+    font-family: "SF Pro", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+color: white;
+margin-top: 10px;
+letter-spacing: 2px;
+}
+
+.pay img{
+    width: 60%;
+}
+
+.social img{
+    margin-left: 5px;
+}
+
+.foot-links img{
+    margin-top: 20px;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .hero-content {
+        gap: 150px;
+    }
+    
+    .text-side {
+        padding-left: 50px;
+    }
+    
+    .card {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
+    .card2{
+        width: 65%;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    header {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    .header-left, .header-right {
+        gap: 30px;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .text-side, .image-side {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+        padding: 0 30px;
+    }
+    
+    .image-side {
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    .card {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+    
+    .card2 {
+        width: 100%;
+    }
+    
+    .brand-head {
+        width: 70%;
+    }
+    
+    .testimonial-text, .counter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .count-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .foot-content {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .navbar {
+        position: static;
+        padding-top: 20px;
+    }
+    
+    nav {
+        display: none; 
+    }
+    
+    .header-left, .header-right {
+        gap: 15px;
+    }
+    
+    .text-side h1 {
+        font-size: 48px;
+    }
+    
+    .text-side h4 {
+        font-size: 20px;
+    }
+    
+    input[type="text"] {
+        padding: 30px 50px;
+    }
+    
+    button[type="submit"] {
+        margin-left: 50px;
+    }
+    
+    .head {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .brand-head {
+        width: 100%;
+    }
+    
+    .forbes-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .header-left, .header-right {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .text-side h1 {
+        font-size: 36px;
+    }
+    
+    .text-side h4 {
+        font-size: 18px;
+    }
+    
+    .card, .card2 {
+        grid-template-columns: 1fr;
+    }
+    
+    input[type="text"] {
+        padding: 20px 30px;
+    }
+    
+    button[type="submit"] {
+        margin-left: 20px;
+    }
+    
+    .testimonial h2, .count h2, .forbes h2 {
+        margin-left: 20px;
+    }
+    
+    .all-text {
+        margin-left: 10px;
+        padding: 20px;
+    }
+    
+    .foot-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .pay img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 399.98px) {
+    .text-side {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .text-side h1 {
+        font-size: 30px;
+    }
+    
+    input[type="text"] {
+        padding: 15px 20px;
+    }
+    
+    button[type="submit"] {
+        margin-left: 10px;
+    }
+    
+    .btn-head button {
+        padding: 8px 15px;
+    }
+}
